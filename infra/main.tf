@@ -1,8 +1,4 @@
-module "rg" {
-  source = "../Modules/Resouce_Group"
-  rg_name = "vishalrg"
-  rg_location = "West US"
-}
+
 
 module "vnet"{
     depends_on = [ module.rg ]
